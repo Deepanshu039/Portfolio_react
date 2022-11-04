@@ -1,19 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./intro.scss";
-import { init } from "ityped";
-import { useRef } from "react";
 import Typewriter from "typewriter-effect";
 
 export default function Intro() {
-  //   const textRef = useRef();
-
-  //   useEffect(() => {
-  //     init(textRef.current, {
-  //       showCursor: true,
-  //       backDelay: 1500,
-  //       strings: ["Developer", "Designer", "Content Creator"],
-  //     });
-  //   }, []);
 
   return (
     <div className="intro" id="intro">
@@ -29,7 +18,7 @@ export default function Intro() {
           <div className="text">
             <h3>{`Full-Stack `}</h3>
 
-            <p>
+            <span>
               <Typewriter
                 wrapperClassName="typewriter"
                 cursorClassName="cursorTypewriter"
@@ -39,9 +28,8 @@ export default function Intro() {
                   loop: true,
                 }}
               />
-            </p>
+            </span>
           </div>
-          {/* </h3> */}
         </div>
         <a href="#portfolio">
           <img src="assets/down.png" alt="" />
