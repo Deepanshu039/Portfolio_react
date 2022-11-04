@@ -1,0 +1,130 @@
+@import "../../global.scss";
+
+.intro {
+  background-color: white;
+  display: flex;
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    flex: 0.5;
+    // background-color: yellow;
+    overflow: hidden;
+
+    .imageContainer {
+      width: 700px;
+      height: 700px;
+      background-color: crimson;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+
+      @include mobile{
+        align-items: flex-start;
+      }
+
+      img {
+        height: 90%;
+
+        @include mobile{
+            height: 50%;
+        }
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+    position: relative;
+
+    // background-color: red;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include mobile{
+        padding-left: 0;
+        align-items: center ;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+
+        @include mobile{
+            font-size: 40px;
+            align-items: center;
+            margin: 10px 75px;
+        }
+      }
+      h2 {
+        font-size: 35px;
+      }
+      h3 {
+        font-size: 30px;
+        // width: 40%;
+        // border: solid seagreen 4px;
+        @include mobile{
+            font-size: 20px;
+        }
+      }
+      p {
+        // display: inline-block;
+        font-size: 30px;
+        font-weight: 700;
+        overflow: visible;
+        color: crimson;
+        // border: solid aquamarine 4px;
+        // left: 250px;
+        margin-left: 7px;
+        float: left;
+
+        @include mobile{
+            font-size: 20px;
+        }
+      }
+
+      // }
+      .text {
+        display: flex;
+        // border: solid royalblue 4px;
+      }
+    }
+
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+// .typewriter {
+  // padding-top: 25px;
+  // display: inline-block;
+  // font-size: inherit;
+  // color: crimson;
+  // border: solid coral 4px;
+  // overflow-x: visible;
+  // margin-top: 30px;
+// }
