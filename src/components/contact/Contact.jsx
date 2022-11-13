@@ -17,9 +17,18 @@ const [message, setMessage]= useState(false);
       <h2>Contact.</h2>
       <form name="contact" method="post" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
-          <input type="text" placeholder="Name"/>
+          {/* <input type="text" placeholder="Name"/>
           <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
+          <textarea placeholder="Message"></textarea> */}
+          <p>
+            <label> <input type="text" name="name" placeholder="Your Name"/></label>
+          </p>
+          <p>
+            <label> <input type="email" name="email" placeholder="Your Email"/></label>
+          </p>
+          <p>
+            <label > <textarea name="message" placeholder="Message"></textarea></label>
+          </p>
           <button type="submit">Send</button>
           {message && <span>Thanks, I'll reply ASAP :))</span>}
       </form>
