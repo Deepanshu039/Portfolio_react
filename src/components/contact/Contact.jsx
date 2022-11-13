@@ -5,7 +5,7 @@ import "./contact.scss"
 export default function Contact() {
 const [message, setMessage]= useState(false);
   const handleSubmit = (e)=>{
-    e.preventDefault();
+    // e.preventDefault();
     setMessage(true);
   }
   return (
