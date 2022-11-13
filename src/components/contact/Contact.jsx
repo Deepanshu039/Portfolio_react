@@ -16,6 +16,7 @@ const [message, setMessage]= useState(false);
     <div className="right">
       <h2>Contact.</h2>
       <form name="contact" method="post" onSubmit={handleSubmit}>
+      <input type="hidden" name="form-name" value="contact" />
           <input type="text" placeholder="Name"/>
           <input type="email" placeholder="Email" />
           <textarea placeholder="Message"></textarea>
